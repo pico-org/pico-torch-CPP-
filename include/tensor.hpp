@@ -12,14 +12,19 @@ public:
     std::vector<int> _strides;
     std::string _ops;
     std::vector<Tensor*> _parents;
+    Tensor* address;
     
     template <typename T>
     Tensor(const std::vector<T>& v);  
     
     void data() const;
     void size() const;
-
+    
     Tensor operator+(const Tensor& other) const;
+    Tensor operator-(const Tensor& other) const;
+    Tensor operator*(const Tensor& other) const;
+    Tensor operator/(const Tensor& other) const;
+
 };
 
 // helper func for reading ND array
@@ -40,6 +45,10 @@ void processND(const std::vector<T>& vec, std::vector<double>& _data) {
 template <typename T>
 Tensor::Tensor(const std::vector<T>& v) {       
     processND(v, this->_data);
+    this->address = this;
 }
+
+
+
 
 #endif 
