@@ -1,0 +1,5 @@
+/home/smruti/Desktop/git repos/Pico-Torch-CPP/build/CMakeFiles/main.dir
+/home/smruti/Desktop/git repos/Pico-Torch-CPP/build/CMakeFiles/edit_cache.dir
+/home/smruti/Desktop/git repos/Pico-Torch-CPP/build/CMakeFiles/rebuild_cache.dir
+/home/smruti/Desktop/git repos/Pico-Torch-CPP/build/include/CMakeFiles/edit_cache.dir
+/home/smruti/Desktop/git repos/Pico-Torch-CPP/build/include/CMakeFiles/rebuild_cache.dir

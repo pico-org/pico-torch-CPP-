@@ -16,10 +16,8 @@ target_include_directories(pico_torch_headers INTERFACE
     $<INSTALL_INTERFACE:include>
 )
 
-# Add header files to the target (for IDE support)
-target_sources(pico_torch_headers INTERFACE
-    $<BUILD_INTERFACE:${HEADER_FILES}>
-)
+# Note: For INTERFACE libraries, we don't need to add sources
+# The include directories are sufficient for compilation
 
 # Set C++ standard requirements
 target_compile_features(pico_torch_headers INTERFACE cxx_std_17)
